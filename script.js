@@ -31,7 +31,7 @@ function resetDiv(){
         div.parentNode.removeChild(div);
     })
 
-    let newSize = prompt("Введите новый размер для сетки");
+    let newSize = prompt("Введите новый размер для сетки:");
     makeGrid(newSize);
 }
 
