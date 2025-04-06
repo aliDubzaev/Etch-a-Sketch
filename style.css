@@ -1,7 +1,9 @@
  html body{
   margin: 0px;
   padding: 0px;
-  background-image: url(/3431856.jpg);
+  background-image: url(./3431856.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 } 
 
 button{
