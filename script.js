@@ -28,7 +28,7 @@ function resetDiv() {
 mainContainer.innerHTML = '';
 
     let newSize = prompt("Введите новый размер для сетки:");
-    if (newSize === null || isNaN(newSize) || newSize <= 9) {
+    if (newSize === null || isNaN(newSize) || newSize <= 0) {
         alert("Неверный ввод!");
         return;
     }
