@@ -19,7 +19,7 @@ function makeGrid(dimension){
             let g = Math.floor(Math.random() * 255);
             let b = Math.floor(Math.random() * 255);
 
-            event.target.style.backgroundColor = `rgb(${r},${b},${g})`;
+            event.target.style.backgroundColor = `rgb(${r},${g},${b})`;
         });
         mainContainer.appendChild(div);
     }
