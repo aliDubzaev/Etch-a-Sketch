@@ -8,7 +8,6 @@ function makeGrid(dimension){
 
     for(let i = 0; i < volume; i++){
         let div = document.createElement('div');
-        div.style.float = "left";
         div.style.width = size + "px";
         div.style.height = size + "px";
         div.classList.add("gridBlock");
@@ -25,13 +24,14 @@ function makeGrid(dimension){
     }
 }
 
-function resetDiv(){
-    let grid = document.querySelectorAll("div.gridBlock");
-    grid.forEach(function(div) {
-        div.parentNode.removeChild(div);
-    })
+function resetDiv() { 
+mainContainer.innerHTML = '';
 
     let newSize = prompt("Введите новый размер для сетки:");
+    if (newSize === null || isNaN(newSize) || newSize <= 9) {
+        alert("Неверный ввод!");
+        return;
+    }
     makeGrid(newSize);
 }
 
